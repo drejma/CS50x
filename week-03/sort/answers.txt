@@ -1,0 +1,37 @@
+sort1 uses: Bubble Sort
+
+How do you know?:
+Fastest method for sorted/best case scenario: Ω(n) > Ω(n log n) > Ω(n2)
+Along with selection sort, slower on random and reversed: O(n2)
+
+
+sort2 uses: Merge Sort
+
+How do you know?:
+Time almost the same in worst case and best case scenarios: Θ(n log n)
+Fastest method (by far) when sorting random and reversed numbers: O(n log n) > O(n2)
+Slower than bubble sort on sorted numbers: Ω(n log n) < Ω(n)
+
+
+sort3 uses: Selection Sort
+
+How do you know?:
+Time almost the same in worst case and best case scenarios: Θ(n2)
+Slower than merge sort in all cases: Θ(n2) < Θ(n log n)
+Slower than bubble sort on sorted/best case scenario: Ω(n2) < Ω(n)
+
+
+Check1: sorted50000.txt
+- sort1 0m0.548s >> bubble sort (n)
+- sort2 0m0.753s >> merge sort (n log n)
+- sort3 0m3.309s >> selection sort (n2)
+
+Check2: random50000.txt
+- sort1 0m7.370s
+- sort2 0m0.570s
+- sort3 0m3.284s
+
+Check3: reversed50000.txt
+- sort1 0m5.512s
+- sort2 0m0.872s
+- sort3 0m3.341s
